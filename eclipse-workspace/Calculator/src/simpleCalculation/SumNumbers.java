@@ -1,4 +1,4 @@
-package essentialClasses;
+package simpleCalculation;
 
 public class SumNumbers {
 
