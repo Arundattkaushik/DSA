@@ -9,6 +9,7 @@ public class Git1 {
 		System.out.println(c);
 		System.out.println("final changes reflected in git");
 		System.out.println("This line added in git");
+		System.out.println("this line was added in eclipse");
 	}
 
 }
