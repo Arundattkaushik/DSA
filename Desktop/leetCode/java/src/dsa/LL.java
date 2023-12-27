@@ -76,12 +76,16 @@ public class LL {
 		}
 	
 		
-		// reversing using loop
+		// reversing list using loop
 		public void reverseList() {
-			Node prevNode = head;
-			Node currNode = head.next;
+			Node prevNode = head; // temporary node to store the previous node.
+			Node currNode = head.next; // node to store node next to first node or prevNode
 			
 			while(currNode != null) {
+				/*
+				Apply a simple logic to replace the value with the use of a
+				third variable i.e., nextNode
+				 */
 				Node nextNode = currNode.next;
 				currNode.next = prevNode;
 				
