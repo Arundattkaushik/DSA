@@ -36,11 +36,12 @@ public class LL {
 				head = newNode;
 				return;
 			}
-			Node currentNode = head;
+			Node currentNode = head; // It is a temporary node in which we are storing head so that we don't lose
+			                         //its value during any operation
 			while(currentNode.next != null) {
 				currentNode = currentNode.next;
 			}
-			currentNode.next = newNode;
+			currentNode.next = newNode; // here new nowNode will automatically point to null.
 		}
 		
 		public void deleteFirst() {
