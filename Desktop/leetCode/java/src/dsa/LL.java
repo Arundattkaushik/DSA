@@ -45,11 +45,7 @@ public class LL {
 		}
 
 		/*
-		Logic: if head is null then we will tell the user that the list is empty
-		But if we have a list then we have to iterate till the last of the list meanwhile
-		shifting the head of list every time towards the last and when we reach the second last node
-		i.e., head.next = null then we shift head to the previous node to it and then point the next of
-		that node to null.
+		shift the head to the next only it will automatically destroy the first node.
 		 */
 		public void deleteFirst() {
 			if(head==null) {
@@ -58,7 +54,14 @@ public class LL {
 			}
 			head = head.next;
 		}
-		
+
+		/*
+		Logic: if head is null then we will tell the user that the list is empty
+		But if we have a list then we have to iterate till the last of the list meanwhile
+		shifting the head of list every time towards the last and when we reach the second last node
+		i.e., head.next = null then we shift head to the previous node to it and then point the next of
+		that node to null.
+		 */
 		public void deleteLast() {
 			if(head==null) {
 				System.out.println("List is empty");
