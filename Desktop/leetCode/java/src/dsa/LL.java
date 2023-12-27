@@ -14,6 +14,11 @@ public class LL {
 	
 	
 	//Adding an element to the beginning of the list
+	/*
+	1. Let's assume we don't have any node initially that means first we have to create a head
+	2. Now let's assume we already have a list in this case we have to point newData to head
+	3. Once the newData is pointed to head, now we need to shift head back to this newNode.
+	 */
 	public void addFirst(String data) {
 		Node newNode = new Node(data);
 		if(head==null) {
