@@ -13,7 +13,7 @@ public class LL {
 	}
 	
 	
-	//Adding element to the beginning of the list
+	//Adding an element to the beginning of the list
 	public void addFirst(String data) {
 		Node newNode = new Node(data);
 		if(head==null) {
@@ -24,7 +24,7 @@ public class LL {
 		head = newNode;
 	}
 	
-	//Adding element to the end of the list
+	//Adding an element to the end of the list
 		public void addLast(String data) {
 			Node newNode = new Node(data);
 			if(head==null) {
